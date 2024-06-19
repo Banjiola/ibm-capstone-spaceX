@@ -1,0 +1,9 @@
+True Ocean means the misssion outcome was successfully landed to a specific region of the ocean.
+False Ocean- the mission outcome was unsuccessfully landed to a a specific region of the ocean.\
+True RLTS means the mission outcome was successfully landed to a ground pad
+False RTLS- the mission outcome was unsuccessfully landed to a ground pad
+True ASDS- the mission outcome was successfully landed on a drone ship
+False ASDS- the mission outcome was unsuccessfully landed on a drone ship
+
+
+select is used to retrieve data
