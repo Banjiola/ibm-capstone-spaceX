@@ -14,7 +14,6 @@
 - [Feature Engineering](#feature-engineering)
 - [Modeling](#modeling)
 - [Results & Insights](#results--insights)
-- [Dashboard / Visuals](#dashboard--visuals)
 - [Conclusion](#conclusion)
 - [Author](#author)
 
@@ -41,8 +40,6 @@ This project analyzes historical SpaceX launch data to build a machine learning 
 ## 📊 Dataset
 
 - **Source**: SpaceX Launch data (via API and web scraping)
-- **Size**: ~90+ launches
-- **Time Period**: 2010–2020
 - **Key Variables**:
   - `FlightNumber`, `PayloadMass`, `Orbit`, `LaunchSite`, `LandingOutcome`, `BoosterVersion`
   - Target: `Class` (1 = Landed, 0 = Not landed)
@@ -57,7 +54,7 @@ This project analyzes historical SpaceX launch data to build a machine learning 
 | Data Handling    | `pandas`, `numpy`, `requests`, `beautifulsoup4`|
 | Visualization    | `matplotlib`, `seaborn`, `plotly`, `folium`    |
 | Modeling         | `scikit-learn`                                 |
-| Evaluation       | Accuracy, F1, LogLoss           |
+| Evaluation       | Accuracy           |
 | Notebook Platform| Jupyter / IBM Skills Network                   |
 
 ---
@@ -88,40 +85,28 @@ Models evaluated:
 - **Logistic Regression**
 - **Support Vector Machines**
 - **Decision Tree**
-- **Random Forest**
+- **K-Nearest Neighbor**
 
 Metrics:
 - Accuracy
-- F1-Score
-- Jaccard Index
-- Log Loss (for probabilistic predictions)
-
 ---
 
 ## 📈 Results & Insights
 
-| **Model**              | **Accuracy** | **F1 Score** | **Log Loss** |
-|------------------------|--------------|--------------|--------------|
-| Logistic Regression    | 83%          | 0.83         | 0.36         |
-| Decision Tree          | 85%          | 0.85         | —            |
-| Random Forest          | 87%          | 0.86         | —            |
+| **Model**              | **Accuracy** | 
+|------------------------|--------------|
+| Logistic Regression    | 83%          |
+| Decision Tree          | 83%           |
+| Random Forest          | 83%          |
+|K Nearest Neighbor      | 83%          |
 
-- **Insight**: Random Forest performed best overall, showing the importance of ensemble learning.
 - **Business Value**: Predictive models can simulate future outcomes and reduce risk in launch planning.
-
----
-
-## 📊 Dashboard / Visuals
-
-- Folium map showing launch sites and outcomes.
-- Interactive EDA charts embedded in the notebook.
-- You can export the visuals for presentation or integrate into a Power BI dashboard.
 
 ---
 
 ## 🧾 Conclusion
 
-- **What worked**: Our experiments showed that Random Forest provided the best predictive performance.
+- **What worked**: Our experiments showed that all models acheived similar predictive performance.
 - **What could improve**: Incorporating additional features like weather conditions and real-time telemetry.
 - **Business value**: Predictive modelling can aid strategic planning, budgeting, and competitor benchmarking in the aerospace industry.
 
