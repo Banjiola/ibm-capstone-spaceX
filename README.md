@@ -114,6 +114,6 @@ Metrics:
 
 ## 👨‍💻 Author
 
-**Olabanji [Olaniyan]**  
+**Olabanji Olaniyan**  
 Data Scientist  
 📫 [LinkedIn](https://www.linkedin.com/in/olabanji-olaniyan-59a6b0198/) | [Portfolio](banjiola.github.io/Olabanji-Olaniyan/)
